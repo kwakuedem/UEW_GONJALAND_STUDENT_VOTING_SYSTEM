@@ -35,7 +35,7 @@
 
     'codes to execute when the load
     Private Sub DashBoard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Timer1.Start()
         updateDashboard()
 
         countTotalNumbertVoters()
@@ -48,10 +48,12 @@
             'count ADAM ABDUL-AZIZ
             data.ExecuteQuery("SELECT COUNT(DISTINCT(student_index)) from votes WHERE choice='" & "pres_01" & "';")
             lblPres1.Text = data.DatabaseTable(0)(0)
+            presd1 = lblPres1.Text
 
             'count TAHIRU ABDUL WADUD DAWAL
             data.ExecuteQuery("SELECT COUNT(DISTINCT(student_index)) from votes WHERE choice='" & "pres_02" & "';")
             lblPres2.Text = data.DatabaseTable(0)(0)
+            presd2 = lblPres2.Text
 
         Catch ex As Exception
             MsgBox(ex.ToString)
@@ -65,10 +67,12 @@
             'count YES votes for INUSAH SABIRATU
             data.ExecuteQuery("SELECT COUNT(DISTINCT(student_index)) from votes WHERE choice='" & "2Vicepres_01" & "' AND agree='" & "yes" & "';")
             lbl2ndYes.Text = data.DatabaseTable(0)(0)
+            _2presY = lbl2ndYes.Text
 
             'count NO votes for INUSAH SABIRATU
             data.ExecuteQuery("SELECT COUNT(DISTINCT(student_index)) from votes WHERE choice='" & "2Vicepres_01" & "' AND agree='" & "no" & "';")
             lbl2ndNo.Text = data.DatabaseTable(0)(0)
+            _2presN = lbl2ndNo.Text
 
         Catch ex As Exception
             MsgBox(ex.ToString)
@@ -82,10 +86,12 @@
             'count ZAKARIA ABUBAKARI
             data.ExecuteQuery("SELECT COUNT(DISTINCT(student_index)) from votes WHERE choice='" & "secret_01" & "';")
             secret1.Text = data.DatabaseTable(0)(0)
+            sec1 = secret1.Text
 
             'count ABUBAKARI YUSSIF
             data.ExecuteQuery("SELECT COUNT(DISTINCT(student_index)) from votes WHERE choice='" & "secret_02" & "';")
             secret2.Text = data.DatabaseTable(0)(0)
+            sec2 = secret2.Text
 
         Catch ex As Exception
             MsgBox(ex.ToString)
@@ -100,10 +106,12 @@
             'count BAWA MOHAMMED
             data.ExecuteQuery("SELECT COUNT(DISTINCT(student_index)) from votes WHERE choice='" & "treas_01" & "';")
             lblTreas1.Text = data.DatabaseTable(0)(0)
+            treas1 = lblTreas1.Text
 
             'count ALIDU ABDUL-JALIL
             data.ExecuteQuery("SELECT COUNT(DISTINCT(student_index)) from votes WHERE choice='" & "treas_02" & "';")
             lblTreas2.Text = data.DatabaseTable(0)(0)
+            treas2 = lblTreas2.Text
 
         Catch ex As Exception
             MsgBox(ex.ToString)
@@ -117,10 +125,12 @@
             'count YES votes for DANAA JACOB
             data.ExecuteQuery("SELECT COUNT(DISTINCT(student_index)) from votes WHERE choice='" & "organ_01" & "' AND agree='" & "yes" & "';")
             lblOrganizerYes.Text = data.DatabaseTable(0)(0)
+            organY = lblOrganizerYes.Text
 
             'count NO votes for DANAA JACOB
             data.ExecuteQuery("SELECT COUNT(DISTINCT(student_index)) from votes WHERE choice='" & "organ_01" & "' AND agree='" & "no" & "';")
             lblOrganizerNo.Text = data.DatabaseTable(0)(0)
+            organN = lblOrganizerNo.Text
 
         Catch ex As Exception
             MsgBox(ex.ToString)
@@ -134,10 +144,12 @@
             'count YES votes for JOHN B. MAGDALENE
             data.ExecuteQuery("SELECT COUNT(DISTINCT(student_index)) from votes WHERE choice='" & "womenCo_01" & "' AND agree='" & "yes" & "';")
             lblWomenCommYes.Text = data.DatabaseTable(0)(0)
+            womenCoY = lblWomenCommYes.Text
 
             'count NO votes for JOHN B. MAGDALENE
             data.ExecuteQuery("SELECT COUNT(DISTINCT(student_index)) from votes WHERE choice='" & "womenCo_01" & "' AND agree='" & "no" & "';")
             lblWomenCommNo.Text = data.DatabaseTable(0)(0)
+            womenCoN = lblWomenCommNo.Text
 
         Catch ex As Exception
             MsgBox(ex.ToString)
@@ -151,10 +163,12 @@
             'count YES votes for DARI ZULKANDEEN BORENYI
             data.ExecuteQuery("SELECT COUNT(DISTINCT(student_index)) from votes WHERE choice='" & "pubReOf_01" & "' AND agree='" & "yes" & "';")
             lblPublicRelatioOffYes.Text = data.DatabaseTable(0)(0)
+            publiOfY = lblPublicRelatioOffYes.Text
 
             'count NO votes for DARI ZULKANDEEN BORENYI
             data.ExecuteQuery("SELECT COUNT(DISTINCT(student_index)) from votes WHERE choice='" & "pubReOf_01" & "' AND agree='" & "no" & "';")
             lblPublicRelatioOffNo.Text = data.DatabaseTable(0)(0)
+            publiOfN = lblPublicRelatioOffNo.Text
 
         Catch ex As Exception
             MsgBox(ex.ToString)
@@ -169,6 +183,7 @@
             Dim result As Integer = data.RecordCount
 
             lblcurrentVoters.Text = data.DatabaseTable(0)(0)
+            currVoters = lblcurrentVoters.Text
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
@@ -198,5 +213,15 @@
 
 
         countCurrentVoters()
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim counter As Integer = 0
+        Dim setTime As Integer = TimeOfDay.Second
+
+        If setTime Mod 3 = 0 Then
+            updateDashboard()
+        End If
+
     End Sub
 End Class

@@ -14,13 +14,16 @@
                     Dim result As Integer = data.RecordCount
                     If result = 1 Then
                         Dim role As Integer = data.DatabaseTable.Rows(0)(2)
+                        Dim voted As Integer = data.DatabaseTable.Rows(0)(3)
                         student_index = data.DatabaseTable(0)(1)
                         If role = 0 Then
                             DashBoard.Show()
                             Me.Hide()
-                        Else
+                        ElseIf Not (role = 0) And (voted = 0) Then
                             Vote.Show()
                             Me.Hide()
+                        Else
+                            MessageBox.Show("Please you are not allowed to Vote twice ", "Already Voted", MessageBoxButtons.OK, MessageBoxIcon.Warning)
                         End If
                     Else
                         MessageBox.Show("Wrong index number Or Index number not found", "", MessageBoxButtons.OK, MessageBoxIcon.Error)

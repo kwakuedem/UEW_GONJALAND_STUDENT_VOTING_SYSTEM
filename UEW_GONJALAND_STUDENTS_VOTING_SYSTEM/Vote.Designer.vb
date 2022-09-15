@@ -223,25 +223,43 @@ Partial Class Vote
         '
         'Choice_Dawal
         '
+        Me.Choice_Dawal.Appearance = System.Windows.Forms.Appearance.Button
         Me.Choice_Dawal.AutoSize = True
-        Me.Choice_Dawal.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Choice_Dawal.Location = New System.Drawing.Point(26, 105)
+        Me.Choice_Dawal.BackColor = System.Drawing.Color.White
+        Me.Choice_Dawal.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Choice_Dawal.FlatAppearance.BorderSize = 2
+        Me.Choice_Dawal.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime
+        Me.Choice_Dawal.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Choice_Dawal.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Choice_Dawal.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Choice_Dawal.ForeColor = System.Drawing.Color.MediumBlue
+        Me.Choice_Dawal.Location = New System.Drawing.Point(7, 98)
         Me.Choice_Dawal.Name = "Choice_Dawal"
-        Me.Choice_Dawal.Size = New System.Drawing.Size(13, 12)
+        Me.Choice_Dawal.Size = New System.Drawing.Size(55, 31)
         Me.Choice_Dawal.TabIndex = 0
         Me.Choice_Dawal.TabStop = True
-        Me.Choice_Dawal.UseVisualStyleBackColor = True
+        Me.Choice_Dawal.Text = "VOTE"
+        Me.Choice_Dawal.UseVisualStyleBackColor = False
         '
         'Choice_Aziz
         '
+        Me.Choice_Aziz.Appearance = System.Windows.Forms.Appearance.Button
         Me.Choice_Aziz.AutoSize = True
-        Me.Choice_Aziz.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Choice_Aziz.Location = New System.Drawing.Point(26, 35)
+        Me.Choice_Aziz.BackColor = System.Drawing.Color.White
+        Me.Choice_Aziz.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Choice_Aziz.FlatAppearance.BorderSize = 2
+        Me.Choice_Aziz.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime
+        Me.Choice_Aziz.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Choice_Aziz.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Choice_Aziz.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Choice_Aziz.ForeColor = System.Drawing.Color.MediumBlue
+        Me.Choice_Aziz.Location = New System.Drawing.Point(7, 32)
         Me.Choice_Aziz.Name = "Choice_Aziz"
-        Me.Choice_Aziz.Size = New System.Drawing.Size(13, 12)
+        Me.Choice_Aziz.Size = New System.Drawing.Size(55, 31)
         Me.Choice_Aziz.TabIndex = 0
         Me.Choice_Aziz.TabStop = True
-        Me.Choice_Aziz.UseVisualStyleBackColor = True
+        Me.Choice_Aziz.Text = "VOTE"
+        Me.Choice_Aziz.UseVisualStyleBackColor = False
         '
         'GroupBox3
         '
@@ -303,27 +321,43 @@ Partial Class Vote
         '
         'Choice_Sabiratu_No
         '
+        Me.Choice_Sabiratu_No.Appearance = System.Windows.Forms.Appearance.Button
         Me.Choice_Sabiratu_No.AutoSize = True
-        Me.Choice_Sabiratu_No.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Choice_Sabiratu_No.Location = New System.Drawing.Point(12, 72)
+        Me.Choice_Sabiratu_No.BackColor = System.Drawing.Color.White
+        Me.Choice_Sabiratu_No.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Choice_Sabiratu_No.FlatAppearance.BorderSize = 2
+        Me.Choice_Sabiratu_No.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime
+        Me.Choice_Sabiratu_No.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Choice_Sabiratu_No.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Choice_Sabiratu_No.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Choice_Sabiratu_No.ForeColor = System.Drawing.Color.MediumBlue
+        Me.Choice_Sabiratu_No.Location = New System.Drawing.Point(12, 66)
         Me.Choice_Sabiratu_No.Name = "Choice_Sabiratu_No"
-        Me.Choice_Sabiratu_No.Size = New System.Drawing.Size(45, 21)
+        Me.Choice_Sabiratu_No.Size = New System.Drawing.Size(42, 31)
         Me.Choice_Sabiratu_No.TabIndex = 0
         Me.Choice_Sabiratu_No.TabStop = True
         Me.Choice_Sabiratu_No.Text = "NO"
-        Me.Choice_Sabiratu_No.UseVisualStyleBackColor = True
+        Me.Choice_Sabiratu_No.UseVisualStyleBackColor = False
         '
         'Choice_Sabiratu_Yes
         '
+        Me.Choice_Sabiratu_Yes.Appearance = System.Windows.Forms.Appearance.Button
         Me.Choice_Sabiratu_Yes.AutoSize = True
-        Me.Choice_Sabiratu_Yes.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Choice_Sabiratu_Yes.Location = New System.Drawing.Point(12, 26)
+        Me.Choice_Sabiratu_Yes.BackColor = System.Drawing.Color.White
+        Me.Choice_Sabiratu_Yes.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Choice_Sabiratu_Yes.FlatAppearance.BorderSize = 2
+        Me.Choice_Sabiratu_Yes.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime
+        Me.Choice_Sabiratu_Yes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Choice_Sabiratu_Yes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Choice_Sabiratu_Yes.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Choice_Sabiratu_Yes.ForeColor = System.Drawing.Color.MediumBlue
+        Me.Choice_Sabiratu_Yes.Location = New System.Drawing.Point(12, 20)
         Me.Choice_Sabiratu_Yes.Name = "Choice_Sabiratu_Yes"
-        Me.Choice_Sabiratu_Yes.Size = New System.Drawing.Size(47, 21)
+        Me.Choice_Sabiratu_Yes.Size = New System.Drawing.Size(44, 31)
         Me.Choice_Sabiratu_Yes.TabIndex = 0
         Me.Choice_Sabiratu_Yes.TabStop = True
         Me.Choice_Sabiratu_Yes.Text = "YES"
-        Me.Choice_Sabiratu_Yes.UseVisualStyleBackColor = True
+        Me.Choice_Sabiratu_Yes.UseVisualStyleBackColor = False
         '
         'GroupBox5
         '
@@ -416,26 +450,43 @@ Partial Class Vote
         '
         'Choice_Yussif
         '
+        Me.Choice_Yussif.Appearance = System.Windows.Forms.Appearance.Button
         Me.Choice_Yussif.AutoSize = True
-        Me.Choice_Yussif.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Choice_Yussif.Location = New System.Drawing.Point(25, 105)
+        Me.Choice_Yussif.BackColor = System.Drawing.Color.White
+        Me.Choice_Yussif.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Choice_Yussif.FlatAppearance.BorderSize = 2
+        Me.Choice_Yussif.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime
+        Me.Choice_Yussif.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Choice_Yussif.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Choice_Yussif.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Choice_Yussif.ForeColor = System.Drawing.Color.MediumBlue
+        Me.Choice_Yussif.Location = New System.Drawing.Point(6, 97)
         Me.Choice_Yussif.Name = "Choice_Yussif"
-        Me.Choice_Yussif.Size = New System.Drawing.Size(13, 12)
+        Me.Choice_Yussif.Size = New System.Drawing.Size(55, 31)
         Me.Choice_Yussif.TabIndex = 0
         Me.Choice_Yussif.TabStop = True
-        Me.Choice_Yussif.UseVisualStyleBackColor = True
+        Me.Choice_Yussif.Text = "VOTE"
+        Me.Choice_Yussif.UseVisualStyleBackColor = False
         '
         'Choice_Abubakari
         '
+        Me.Choice_Abubakari.Appearance = System.Windows.Forms.Appearance.Button
         Me.Choice_Abubakari.AutoSize = True
-        Me.Choice_Abubakari.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Choice_Abubakari.Font = New System.Drawing.Font("Algerian", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Choice_Abubakari.Location = New System.Drawing.Point(25, 35)
+        Me.Choice_Abubakari.BackColor = System.Drawing.Color.White
+        Me.Choice_Abubakari.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Choice_Abubakari.FlatAppearance.BorderSize = 2
+        Me.Choice_Abubakari.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime
+        Me.Choice_Abubakari.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Choice_Abubakari.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Choice_Abubakari.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Choice_Abubakari.ForeColor = System.Drawing.Color.MediumBlue
+        Me.Choice_Abubakari.Location = New System.Drawing.Point(6, 29)
         Me.Choice_Abubakari.Name = "Choice_Abubakari"
-        Me.Choice_Abubakari.Size = New System.Drawing.Size(13, 12)
+        Me.Choice_Abubakari.Size = New System.Drawing.Size(55, 31)
         Me.Choice_Abubakari.TabIndex = 0
         Me.Choice_Abubakari.TabStop = True
-        Me.Choice_Abubakari.UseVisualStyleBackColor = True
+        Me.Choice_Abubakari.Text = "VOTE"
+        Me.Choice_Abubakari.UseVisualStyleBackColor = False
         '
         'GroupBox7
         '
@@ -498,25 +549,43 @@ Partial Class Vote
         '
         'Choice_Abdul_Jalil
         '
+        Me.Choice_Abdul_Jalil.Appearance = System.Windows.Forms.Appearance.Button
         Me.Choice_Abdul_Jalil.AutoSize = True
-        Me.Choice_Abdul_Jalil.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Choice_Abdul_Jalil.Location = New System.Drawing.Point(26, 109)
+        Me.Choice_Abdul_Jalil.BackColor = System.Drawing.Color.White
+        Me.Choice_Abdul_Jalil.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Choice_Abdul_Jalil.FlatAppearance.BorderSize = 2
+        Me.Choice_Abdul_Jalil.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime
+        Me.Choice_Abdul_Jalil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Choice_Abdul_Jalil.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Choice_Abdul_Jalil.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Choice_Abdul_Jalil.ForeColor = System.Drawing.Color.MediumBlue
+        Me.Choice_Abdul_Jalil.Location = New System.Drawing.Point(5, 98)
         Me.Choice_Abdul_Jalil.Name = "Choice_Abdul_Jalil"
-        Me.Choice_Abdul_Jalil.Size = New System.Drawing.Size(13, 12)
+        Me.Choice_Abdul_Jalil.Size = New System.Drawing.Size(55, 31)
         Me.Choice_Abdul_Jalil.TabIndex = 0
         Me.Choice_Abdul_Jalil.TabStop = True
-        Me.Choice_Abdul_Jalil.UseVisualStyleBackColor = True
+        Me.Choice_Abdul_Jalil.Text = "VOTE"
+        Me.Choice_Abdul_Jalil.UseVisualStyleBackColor = False
         '
         'Choice_Mohammed
         '
+        Me.Choice_Mohammed.Appearance = System.Windows.Forms.Appearance.Button
         Me.Choice_Mohammed.AutoSize = True
-        Me.Choice_Mohammed.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Choice_Mohammed.Location = New System.Drawing.Point(26, 36)
+        Me.Choice_Mohammed.BackColor = System.Drawing.Color.White
+        Me.Choice_Mohammed.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Choice_Mohammed.FlatAppearance.BorderSize = 2
+        Me.Choice_Mohammed.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime
+        Me.Choice_Mohammed.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Choice_Mohammed.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Choice_Mohammed.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Choice_Mohammed.ForeColor = System.Drawing.Color.MediumBlue
+        Me.Choice_Mohammed.Location = New System.Drawing.Point(5, 32)
         Me.Choice_Mohammed.Name = "Choice_Mohammed"
-        Me.Choice_Mohammed.Size = New System.Drawing.Size(13, 12)
+        Me.Choice_Mohammed.Size = New System.Drawing.Size(55, 31)
         Me.Choice_Mohammed.TabIndex = 0
         Me.Choice_Mohammed.TabStop = True
-        Me.Choice_Mohammed.UseVisualStyleBackColor = True
+        Me.Choice_Mohammed.Text = "VOTE"
+        Me.Choice_Mohammed.UseVisualStyleBackColor = False
         '
         'GunaPanel6
         '
@@ -608,27 +677,43 @@ Partial Class Vote
         '
         'Choice_Jacob_No
         '
+        Me.Choice_Jacob_No.Appearance = System.Windows.Forms.Appearance.Button
         Me.Choice_Jacob_No.AutoSize = True
-        Me.Choice_Jacob_No.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Choice_Jacob_No.Location = New System.Drawing.Point(12, 72)
+        Me.Choice_Jacob_No.BackColor = System.Drawing.Color.White
+        Me.Choice_Jacob_No.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Choice_Jacob_No.FlatAppearance.BorderSize = 2
+        Me.Choice_Jacob_No.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime
+        Me.Choice_Jacob_No.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Choice_Jacob_No.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Choice_Jacob_No.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Choice_Jacob_No.ForeColor = System.Drawing.Color.MediumBlue
+        Me.Choice_Jacob_No.Location = New System.Drawing.Point(12, 66)
         Me.Choice_Jacob_No.Name = "Choice_Jacob_No"
-        Me.Choice_Jacob_No.Size = New System.Drawing.Size(45, 21)
+        Me.Choice_Jacob_No.Size = New System.Drawing.Size(42, 31)
         Me.Choice_Jacob_No.TabIndex = 0
         Me.Choice_Jacob_No.TabStop = True
         Me.Choice_Jacob_No.Text = "NO"
-        Me.Choice_Jacob_No.UseVisualStyleBackColor = True
+        Me.Choice_Jacob_No.UseVisualStyleBackColor = False
         '
         'Choice_Jacob_Yes
         '
+        Me.Choice_Jacob_Yes.Appearance = System.Windows.Forms.Appearance.Button
         Me.Choice_Jacob_Yes.AutoSize = True
-        Me.Choice_Jacob_Yes.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Choice_Jacob_Yes.Location = New System.Drawing.Point(12, 26)
+        Me.Choice_Jacob_Yes.BackColor = System.Drawing.Color.White
+        Me.Choice_Jacob_Yes.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Choice_Jacob_Yes.FlatAppearance.BorderSize = 2
+        Me.Choice_Jacob_Yes.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime
+        Me.Choice_Jacob_Yes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Choice_Jacob_Yes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Choice_Jacob_Yes.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Choice_Jacob_Yes.ForeColor = System.Drawing.Color.MediumBlue
+        Me.Choice_Jacob_Yes.Location = New System.Drawing.Point(12, 20)
         Me.Choice_Jacob_Yes.Name = "Choice_Jacob_Yes"
-        Me.Choice_Jacob_Yes.Size = New System.Drawing.Size(47, 21)
+        Me.Choice_Jacob_Yes.Size = New System.Drawing.Size(44, 31)
         Me.Choice_Jacob_Yes.TabIndex = 0
         Me.Choice_Jacob_Yes.TabStop = True
         Me.Choice_Jacob_Yes.Text = "YES"
-        Me.Choice_Jacob_Yes.UseVisualStyleBackColor = True
+        Me.Choice_Jacob_Yes.UseVisualStyleBackColor = False
         '
         'GroupBox13
         '
@@ -660,27 +745,43 @@ Partial Class Vote
         '
         'Choice_magdalene_No
         '
+        Me.Choice_magdalene_No.Appearance = System.Windows.Forms.Appearance.Button
         Me.Choice_magdalene_No.AutoSize = True
-        Me.Choice_magdalene_No.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Choice_magdalene_No.Location = New System.Drawing.Point(12, 72)
+        Me.Choice_magdalene_No.BackColor = System.Drawing.Color.White
+        Me.Choice_magdalene_No.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Choice_magdalene_No.FlatAppearance.BorderSize = 2
+        Me.Choice_magdalene_No.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime
+        Me.Choice_magdalene_No.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Choice_magdalene_No.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Choice_magdalene_No.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Choice_magdalene_No.ForeColor = System.Drawing.Color.MediumBlue
+        Me.Choice_magdalene_No.Location = New System.Drawing.Point(12, 66)
         Me.Choice_magdalene_No.Name = "Choice_magdalene_No"
-        Me.Choice_magdalene_No.Size = New System.Drawing.Size(45, 21)
+        Me.Choice_magdalene_No.Size = New System.Drawing.Size(42, 31)
         Me.Choice_magdalene_No.TabIndex = 0
         Me.Choice_magdalene_No.TabStop = True
         Me.Choice_magdalene_No.Text = "NO"
-        Me.Choice_magdalene_No.UseVisualStyleBackColor = True
+        Me.Choice_magdalene_No.UseVisualStyleBackColor = False
         '
         'Choice_magdalene_Yes
         '
+        Me.Choice_magdalene_Yes.Appearance = System.Windows.Forms.Appearance.Button
         Me.Choice_magdalene_Yes.AutoSize = True
-        Me.Choice_magdalene_Yes.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Choice_magdalene_Yes.Location = New System.Drawing.Point(12, 26)
+        Me.Choice_magdalene_Yes.BackColor = System.Drawing.Color.White
+        Me.Choice_magdalene_Yes.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Choice_magdalene_Yes.FlatAppearance.BorderSize = 2
+        Me.Choice_magdalene_Yes.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime
+        Me.Choice_magdalene_Yes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Choice_magdalene_Yes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Choice_magdalene_Yes.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Choice_magdalene_Yes.ForeColor = System.Drawing.Color.MediumBlue
+        Me.Choice_magdalene_Yes.Location = New System.Drawing.Point(12, 20)
         Me.Choice_magdalene_Yes.Name = "Choice_magdalene_Yes"
-        Me.Choice_magdalene_Yes.Size = New System.Drawing.Size(47, 21)
+        Me.Choice_magdalene_Yes.Size = New System.Drawing.Size(44, 31)
         Me.Choice_magdalene_Yes.TabIndex = 0
         Me.Choice_magdalene_Yes.TabStop = True
         Me.Choice_magdalene_Yes.Text = "YES"
-        Me.Choice_magdalene_Yes.UseVisualStyleBackColor = True
+        Me.Choice_magdalene_Yes.UseVisualStyleBackColor = False
         '
         'GunaPanel9
         '
@@ -742,27 +843,43 @@ Partial Class Vote
         '
         'Choice_Borenyi_No
         '
+        Me.Choice_Borenyi_No.Appearance = System.Windows.Forms.Appearance.Button
         Me.Choice_Borenyi_No.AutoSize = True
-        Me.Choice_Borenyi_No.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Choice_Borenyi_No.Location = New System.Drawing.Point(12, 72)
+        Me.Choice_Borenyi_No.BackColor = System.Drawing.Color.White
+        Me.Choice_Borenyi_No.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Choice_Borenyi_No.FlatAppearance.BorderSize = 2
+        Me.Choice_Borenyi_No.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime
+        Me.Choice_Borenyi_No.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Choice_Borenyi_No.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Choice_Borenyi_No.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Choice_Borenyi_No.ForeColor = System.Drawing.Color.MediumBlue
+        Me.Choice_Borenyi_No.Location = New System.Drawing.Point(12, 66)
         Me.Choice_Borenyi_No.Name = "Choice_Borenyi_No"
-        Me.Choice_Borenyi_No.Size = New System.Drawing.Size(45, 21)
+        Me.Choice_Borenyi_No.Size = New System.Drawing.Size(42, 31)
         Me.Choice_Borenyi_No.TabIndex = 0
         Me.Choice_Borenyi_No.TabStop = True
         Me.Choice_Borenyi_No.Text = "NO"
-        Me.Choice_Borenyi_No.UseVisualStyleBackColor = True
+        Me.Choice_Borenyi_No.UseVisualStyleBackColor = False
         '
         'Choice_Borenyi_Yes
         '
+        Me.Choice_Borenyi_Yes.Appearance = System.Windows.Forms.Appearance.Button
         Me.Choice_Borenyi_Yes.AutoSize = True
-        Me.Choice_Borenyi_Yes.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Choice_Borenyi_Yes.Location = New System.Drawing.Point(12, 26)
+        Me.Choice_Borenyi_Yes.BackColor = System.Drawing.Color.White
+        Me.Choice_Borenyi_Yes.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight
+        Me.Choice_Borenyi_Yes.FlatAppearance.BorderSize = 2
+        Me.Choice_Borenyi_Yes.FlatAppearance.CheckedBackColor = System.Drawing.Color.Lime
+        Me.Choice_Borenyi_Yes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Choice_Borenyi_Yes.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Choice_Borenyi_Yes.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Choice_Borenyi_Yes.ForeColor = System.Drawing.Color.MediumBlue
+        Me.Choice_Borenyi_Yes.Location = New System.Drawing.Point(12, 24)
         Me.Choice_Borenyi_Yes.Name = "Choice_Borenyi_Yes"
-        Me.Choice_Borenyi_Yes.Size = New System.Drawing.Size(47, 21)
+        Me.Choice_Borenyi_Yes.Size = New System.Drawing.Size(44, 31)
         Me.Choice_Borenyi_Yes.TabIndex = 0
         Me.Choice_Borenyi_Yes.TabStop = True
         Me.Choice_Borenyi_Yes.Text = "YES"
-        Me.Choice_Borenyi_Yes.UseVisualStyleBackColor = True
+        Me.Choice_Borenyi_Yes.UseVisualStyleBackColor = False
         '
         'GunaPanel10
         '

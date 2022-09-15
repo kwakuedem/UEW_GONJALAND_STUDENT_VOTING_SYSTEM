@@ -58,13 +58,6 @@ Partial Class DashBoard
         Me.lblTreas1 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
-        Me.GunaShadowPanel5 = New Guna.UI.WinForms.GunaShadowPanel()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.lblOrganizerNo = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
-        Me.lblOrganizerYes = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.GunaShadowPanel6 = New Guna.UI.WinForms.GunaShadowPanel()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
         Me.lblWomenCommNo = New System.Windows.Forms.Label()
@@ -89,13 +82,21 @@ Partial Class DashBoard
         Me.GunaDragControl1 = New Guna.UI.WinForms.GunaDragControl(Me.components)
         Me.MinMaxButton = New System.Windows.Forms.Button()
         Me.Label40 = New System.Windows.Forms.Label()
-        Me.Label41 = New System.Windows.Forms.Label()
-        Me.lblTotalNumberOfVoter = New System.Windows.Forms.Label()
         Me.Label43 = New System.Windows.Forms.Label()
         Me.lblcurrentVoters = New System.Windows.Forms.Label()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.lblCount = New System.Windows.Forms.Label()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.lblOrganizerYes = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.lblOrganizerNo = New System.Windows.Forms.Label()
+        Me.lblTotalNumberOfVoter = New System.Windows.Forms.Label()
+        Me.Label41 = New System.Windows.Forms.Label()
+        Me.GunaShadowPanel5 = New Guna.UI.WinForms.GunaShadowPanel()
+        Me.GunaShadowPanel8 = New Guna.UI.WinForms.GunaShadowPanel()
+        Me.GunaShadowPanel9 = New Guna.UI.WinForms.GunaShadowPanel()
         Me.Panel5.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GunaShadowPanel1.SuspendLayout()
@@ -106,14 +107,14 @@ Partial Class DashBoard
         Me.GroupBox3.SuspendLayout()
         Me.GunaShadowPanel4.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
-        Me.GunaShadowPanel5.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
         Me.GunaShadowPanel6.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
         Me.GunaShadowPanel7.SuspendLayout()
         Me.GroupBox5.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.Panel6.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
+        Me.GunaShadowPanel5.SuspendLayout()
+        Me.GunaShadowPanel8.SuspendLayout()
+        Me.GunaShadowPanel9.SuspendLayout()
         Me.SuspendLayout()
         '
         'buttonClose
@@ -271,7 +272,9 @@ Partial Class DashBoard
         Me.GunaShadowPanel1.Controls.Add(Me.Label1)
         Me.GunaShadowPanel1.Location = New System.Drawing.Point(229, 116)
         Me.GunaShadowPanel1.Name = "GunaShadowPanel1"
-        Me.GunaShadowPanel1.ShadowColor = System.Drawing.Color.Black
+        Me.GunaShadowPanel1.Radius = 5
+        Me.GunaShadowPanel1.ShadowColor = System.Drawing.Color.Navy
+        Me.GunaShadowPanel1.ShadowDepth = 200
         Me.GunaShadowPanel1.Size = New System.Drawing.Size(335, 138)
         Me.GunaShadowPanel1.TabIndex = 12
         '
@@ -280,7 +283,7 @@ Partial Class DashBoard
         Me.GroupBox1.Controls.Add(Me.lblPres2)
         Me.GroupBox1.Controls.Add(Me.lblPres1)
         Me.GroupBox1.ForeColor = System.Drawing.Color.Navy
-        Me.GroupBox1.Location = New System.Drawing.Point(242, 4)
+        Me.GroupBox1.Location = New System.Drawing.Point(242, 11)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(80, 117)
         Me.GroupBox1.TabIndex = 1
@@ -292,7 +295,7 @@ Partial Class DashBoard
         Me.lblPres2.AutoSize = True
         Me.lblPres2.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
         Me.lblPres2.ForeColor = System.Drawing.Color.Lime
-        Me.lblPres2.Location = New System.Drawing.Point(6, 78)
+        Me.lblPres2.Location = New System.Drawing.Point(6, 72)
         Me.lblPres2.Name = "lblPres2"
         Me.lblPres2.Size = New System.Drawing.Size(43, 32)
         Me.lblPres2.TabIndex = 0
@@ -303,7 +306,7 @@ Partial Class DashBoard
         Me.lblPres1.AutoSize = True
         Me.lblPres1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
         Me.lblPres1.ForeColor = System.Drawing.Color.Lime
-        Me.lblPres1.Location = New System.Drawing.Point(6, 22)
+        Me.lblPres1.Location = New System.Drawing.Point(6, 16)
         Me.lblPres1.Name = "lblPres1"
         Me.lblPres1.Size = New System.Drawing.Size(43, 32)
         Me.lblPres1.TabIndex = 0
@@ -325,9 +328,9 @@ Partial Class DashBoard
         Me.Label1.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(31, 92)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(126, 17)
+        Me.Label1.Size = New System.Drawing.Size(202, 17)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "ADAM ABDUL-AZIZ"
+        Me.Label1.Text = "TAHIRU ABDUL WADUD DAWAL"
         '
         'GunaShadowPanel2
         '
@@ -337,7 +340,9 @@ Partial Class DashBoard
         Me.GunaShadowPanel2.Controls.Add(Me.Label3)
         Me.GunaShadowPanel2.Location = New System.Drawing.Point(601, 116)
         Me.GunaShadowPanel2.Name = "GunaShadowPanel2"
-        Me.GunaShadowPanel2.ShadowColor = System.Drawing.Color.Black
+        Me.GunaShadowPanel2.Radius = 5
+        Me.GunaShadowPanel2.ShadowColor = System.Drawing.Color.Navy
+        Me.GunaShadowPanel2.ShadowDepth = 200
         Me.GunaShadowPanel2.Size = New System.Drawing.Size(335, 138)
         Me.GunaShadowPanel2.TabIndex = 12
         '
@@ -403,9 +408,9 @@ Partial Class DashBoard
         Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(75, 103)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(202, 17)
+        Me.Label3.Size = New System.Drawing.Size(121, 17)
         Me.Label3.TabIndex = 0
-        Me.Label3.Text = "TAHIRU ABDUL WADUD DAWAL"
+        Me.Label3.Text = "INUSAH SABIRATU"
         '
         'GunaShadowPanel3
         '
@@ -416,7 +421,9 @@ Partial Class DashBoard
         Me.GunaShadowPanel3.Controls.Add(Me.Label9)
         Me.GunaShadowPanel3.Location = New System.Drawing.Point(975, 116)
         Me.GunaShadowPanel3.Name = "GunaShadowPanel3"
-        Me.GunaShadowPanel3.ShadowColor = System.Drawing.Color.Black
+        Me.GunaShadowPanel3.Radius = 5
+        Me.GunaShadowPanel3.ShadowColor = System.Drawing.Color.Navy
+        Me.GunaShadowPanel3.ShadowDepth = 200
         Me.GunaShadowPanel3.Size = New System.Drawing.Size(335, 138)
         Me.GunaShadowPanel3.TabIndex = 12
         '
@@ -425,7 +432,7 @@ Partial Class DashBoard
         Me.GroupBox3.Controls.Add(Me.secret2)
         Me.GroupBox3.Controls.Add(Me.secret1)
         Me.GroupBox3.ForeColor = System.Drawing.Color.Navy
-        Me.GroupBox3.Location = New System.Drawing.Point(247, 4)
+        Me.GroupBox3.Location = New System.Drawing.Point(247, 11)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(80, 117)
         Me.GroupBox3.TabIndex = 1
@@ -437,7 +444,7 @@ Partial Class DashBoard
         Me.secret2.AutoSize = True
         Me.secret2.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
         Me.secret2.ForeColor = System.Drawing.Color.Lime
-        Me.secret2.Location = New System.Drawing.Point(6, 80)
+        Me.secret2.Location = New System.Drawing.Point(6, 74)
         Me.secret2.Name = "secret2"
         Me.secret2.Size = New System.Drawing.Size(43, 32)
         Me.secret2.TabIndex = 0
@@ -448,7 +455,7 @@ Partial Class DashBoard
         Me.secret1.AutoSize = True
         Me.secret1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
         Me.secret1.ForeColor = System.Drawing.Color.Lime
-        Me.secret1.Location = New System.Drawing.Point(6, 23)
+        Me.secret1.Location = New System.Drawing.Point(6, 17)
         Me.secret1.Name = "secret1"
         Me.secret1.Size = New System.Drawing.Size(43, 32)
         Me.secret1.TabIndex = 0
@@ -460,9 +467,9 @@ Partial Class DashBoard
         Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(56, 92)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(121, 17)
+        Me.Label4.Size = New System.Drawing.Size(126, 17)
         Me.Label4.TabIndex = 0
-        Me.Label4.Text = "INUSAH SABIRATU"
+        Me.Label4.Text = "ABUBAKARI YUSSIF"
         '
         'Label9
         '
@@ -470,9 +477,9 @@ Partial Class DashBoard
         Me.Label9.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(51, 33)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(126, 17)
+        Me.Label9.Size = New System.Drawing.Size(139, 17)
         Me.Label9.TabIndex = 0
-        Me.Label9.Text = "ADAM ABDUL-AZIZ"
+        Me.Label9.Text = "ZAKARIA ABUBAKARI"
         '
         'GunaShadowPanel4
         '
@@ -483,7 +490,9 @@ Partial Class DashBoard
         Me.GunaShadowPanel4.Controls.Add(Me.Label34)
         Me.GunaShadowPanel4.Location = New System.Drawing.Point(229, 328)
         Me.GunaShadowPanel4.Name = "GunaShadowPanel4"
-        Me.GunaShadowPanel4.ShadowColor = System.Drawing.Color.Black
+        Me.GunaShadowPanel4.Radius = 5
+        Me.GunaShadowPanel4.ShadowColor = System.Drawing.Color.Navy
+        Me.GunaShadowPanel4.ShadowDepth = 200
         Me.GunaShadowPanel4.Size = New System.Drawing.Size(335, 138)
         Me.GunaShadowPanel4.TabIndex = 12
         '
@@ -492,7 +501,7 @@ Partial Class DashBoard
         Me.GroupBox7.Controls.Add(Me.lblTreas2)
         Me.GroupBox7.Controls.Add(Me.lblTreas1)
         Me.GroupBox7.ForeColor = System.Drawing.Color.Navy
-        Me.GroupBox7.Location = New System.Drawing.Point(242, 3)
+        Me.GroupBox7.Location = New System.Drawing.Point(242, 10)
         Me.GroupBox7.Name = "GroupBox7"
         Me.GroupBox7.Size = New System.Drawing.Size(80, 117)
         Me.GroupBox7.TabIndex = 1
@@ -504,7 +513,7 @@ Partial Class DashBoard
         Me.lblTreas2.AutoSize = True
         Me.lblTreas2.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
         Me.lblTreas2.ForeColor = System.Drawing.Color.Lime
-        Me.lblTreas2.Location = New System.Drawing.Point(6, 74)
+        Me.lblTreas2.Location = New System.Drawing.Point(6, 68)
         Me.lblTreas2.Name = "lblTreas2"
         Me.lblTreas2.Size = New System.Drawing.Size(43, 32)
         Me.lblTreas2.TabIndex = 0
@@ -515,7 +524,7 @@ Partial Class DashBoard
         Me.lblTreas1.AutoSize = True
         Me.lblTreas1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
         Me.lblTreas1.ForeColor = System.Drawing.Color.Lime
-        Me.lblTreas1.Location = New System.Drawing.Point(6, 19)
+        Me.lblTreas1.Location = New System.Drawing.Point(6, 13)
         Me.lblTreas1.Name = "lblTreas1"
         Me.lblTreas1.Size = New System.Drawing.Size(43, 32)
         Me.lblTreas1.TabIndex = 0
@@ -527,9 +536,9 @@ Partial Class DashBoard
         Me.Label7.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(47, 82)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(139, 17)
+        Me.Label7.Size = New System.Drawing.Size(125, 17)
         Me.Label7.TabIndex = 0
-        Me.Label7.Text = "ZAKARIA ABUBAKARI"
+        Me.Label7.Text = "ALIDU ABDUL-JALIL"
         '
         'Label34
         '
@@ -537,87 +546,9 @@ Partial Class DashBoard
         Me.Label34.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label34.Location = New System.Drawing.Point(47, 25)
         Me.Label34.Name = "Label34"
-        Me.Label34.Size = New System.Drawing.Size(126, 17)
+        Me.Label34.Size = New System.Drawing.Size(132, 17)
         Me.Label34.TabIndex = 0
-        Me.Label34.Text = "ADAM ABDUL-AZIZ"
-        '
-        'GunaShadowPanel5
-        '
-        Me.GunaShadowPanel5.BackColor = System.Drawing.Color.Transparent
-        Me.GunaShadowPanel5.BaseColor = System.Drawing.Color.White
-        Me.GunaShadowPanel5.Controls.Add(Me.GroupBox4)
-        Me.GunaShadowPanel5.Controls.Add(Me.Label6)
-        Me.GunaShadowPanel5.Location = New System.Drawing.Point(601, 328)
-        Me.GunaShadowPanel5.Name = "GunaShadowPanel5"
-        Me.GunaShadowPanel5.ShadowColor = System.Drawing.Color.Black
-        Me.GunaShadowPanel5.Size = New System.Drawing.Size(335, 138)
-        Me.GunaShadowPanel5.TabIndex = 12
-        '
-        'GroupBox4
-        '
-        Me.GroupBox4.Controls.Add(Me.lblOrganizerNo)
-        Me.GroupBox4.Controls.Add(Me.Label23)
-        Me.GroupBox4.Controls.Add(Me.lblOrganizerYes)
-        Me.GroupBox4.Controls.Add(Me.Label25)
-        Me.GroupBox4.ForeColor = System.Drawing.Color.Navy
-        Me.GroupBox4.Location = New System.Drawing.Point(33, 21)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(277, 58)
-        Me.GroupBox4.TabIndex = 1
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "VOTES"
-        '
-        'lblOrganizerNo
-        '
-        Me.lblOrganizerNo.AutoSize = True
-        Me.lblOrganizerNo.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
-        Me.lblOrganizerNo.ForeColor = System.Drawing.Color.Lime
-        Me.lblOrganizerNo.Location = New System.Drawing.Point(209, 18)
-        Me.lblOrganizerNo.Name = "lblOrganizerNo"
-        Me.lblOrganizerNo.Size = New System.Drawing.Size(43, 32)
-        Me.lblOrganizerNo.TabIndex = 0
-        Me.lblOrganizerNo.Text = "45"
-        '
-        'Label23
-        '
-        Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(161, 25)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(35, 21)
-        Me.Label23.TabIndex = 0
-        Me.Label23.Text = "NO"
-        '
-        'lblOrganizerYes
-        '
-        Me.lblOrganizerYes.AutoSize = True
-        Me.lblOrganizerYes.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
-        Me.lblOrganizerYes.ForeColor = System.Drawing.Color.Lime
-        Me.lblOrganizerYes.Location = New System.Drawing.Point(71, 18)
-        Me.lblOrganizerYes.Name = "lblOrganizerYes"
-        Me.lblOrganizerYes.Size = New System.Drawing.Size(57, 32)
-        Me.lblOrganizerYes.TabIndex = 0
-        Me.lblOrganizerYes.Text = "150"
-        '
-        'Label25
-        '
-        Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(6, 25)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(38, 21)
-        Me.Label25.TabIndex = 0
-        Me.Label25.Text = "YES"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(90, 99)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(126, 17)
-        Me.Label6.TabIndex = 0
-        Me.Label6.Text = "ABUBAKARI YUSSIF"
+        Me.Label34.Text = "BAWA MOHAMMED"
         '
         'GunaShadowPanel6
         '
@@ -627,7 +558,9 @@ Partial Class DashBoard
         Me.GunaShadowPanel6.Controls.Add(Me.Label5)
         Me.GunaShadowPanel6.Location = New System.Drawing.Point(975, 328)
         Me.GunaShadowPanel6.Name = "GunaShadowPanel6"
-        Me.GunaShadowPanel6.ShadowColor = System.Drawing.Color.Black
+        Me.GunaShadowPanel6.Radius = 5
+        Me.GunaShadowPanel6.ShadowColor = System.Drawing.Color.Navy
+        Me.GunaShadowPanel6.ShadowDepth = 200
         Me.GunaShadowPanel6.Size = New System.Drawing.Size(335, 138)
         Me.GunaShadowPanel6.TabIndex = 12
         '
@@ -693,9 +626,9 @@ Partial Class DashBoard
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(104, 99)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(126, 17)
+        Me.Label5.Size = New System.Drawing.Size(140, 17)
         Me.Label5.TabIndex = 0
-        Me.Label5.Text = "ADAM ABDUL-AZIZ"
+        Me.Label5.Text = "JOHN B. MAGDALENE"
         '
         'GunaShadowPanel7
         '
@@ -705,7 +638,9 @@ Partial Class DashBoard
         Me.GunaShadowPanel7.Controls.Add(Me.Label8)
         Me.GunaShadowPanel7.Location = New System.Drawing.Point(229, 537)
         Me.GunaShadowPanel7.Name = "GunaShadowPanel7"
-        Me.GunaShadowPanel7.ShadowColor = System.Drawing.Color.Black
+        Me.GunaShadowPanel7.Radius = 5
+        Me.GunaShadowPanel7.ShadowColor = System.Drawing.Color.Navy
+        Me.GunaShadowPanel7.ShadowDepth = 200
         Me.GunaShadowPanel7.Size = New System.Drawing.Size(335, 138)
         Me.GunaShadowPanel7.TabIndex = 12
         '
@@ -771,9 +706,9 @@ Partial Class DashBoard
         Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(82, 106)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(126, 17)
+        Me.Label8.Size = New System.Drawing.Size(184, 17)
         Me.Label8.TabIndex = 0
-        Me.Label8.Text = "ADAM ABDUL-AZIZ"
+        Me.Label8.Text = "DARI ZULKANDEEN BORENYI"
         '
         'Label10
         '
@@ -824,7 +759,7 @@ Partial Class DashBoard
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.Navy
-        Me.Label15.Location = New System.Drawing.Point(678, 295)
+        Me.Label15.Location = New System.Drawing.Point(715, 295)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(101, 21)
         Me.Label15.TabIndex = 0
@@ -877,34 +812,12 @@ Partial Class DashBoard
         Me.Label40.TabIndex = 0
         Me.Label40.Text = "GONJA LAND STUDENTS ASSOCIATION VOTTING SYSTEM"
         '
-        'Label41
-        '
-        Me.Label41.AutoSize = True
-        Me.Label41.Font = New System.Drawing.Font("Segoe UI", 16.25!, System.Drawing.FontStyle.Bold)
-        Me.Label41.ForeColor = System.Drawing.Color.DodgerBlue
-        Me.Label41.Location = New System.Drawing.Point(15, 15)
-        Me.Label41.Name = "Label41"
-        Me.Label41.Size = New System.Drawing.Size(300, 30)
-        Me.Label41.TabIndex = 0
-        Me.Label41.Text = "TOTAL NUMBER OF VOTERS"
-        '
-        'lblTotalNumberOfVoter
-        '
-        Me.lblTotalNumberOfVoter.AutoSize = True
-        Me.lblTotalNumberOfVoter.Font = New System.Drawing.Font("Segoe UI", 30.25!, System.Drawing.FontStyle.Bold)
-        Me.lblTotalNumberOfVoter.ForeColor = System.Drawing.Color.Navy
-        Me.lblTotalNumberOfVoter.Location = New System.Drawing.Point(119, 70)
-        Me.lblTotalNumberOfVoter.Name = "lblTotalNumberOfVoter"
-        Me.lblTotalNumberOfVoter.Size = New System.Drawing.Size(96, 55)
-        Me.lblTotalNumberOfVoter.TabIndex = 0
-        Me.lblTotalNumberOfVoter.Text = "200"
-        '
         'Label43
         '
         Me.Label43.AutoSize = True
         Me.Label43.Font = New System.Drawing.Font("Segoe UI", 16.25!, System.Drawing.FontStyle.Bold)
         Me.Label43.ForeColor = System.Drawing.Color.RoyalBlue
-        Me.Label43.Location = New System.Drawing.Point(49, 19)
+        Me.Label43.Location = New System.Drawing.Point(1046, 504)
         Me.Label43.Name = "Label43"
         Me.Label43.Size = New System.Drawing.Size(207, 30)
         Me.Label43.TabIndex = 0
@@ -913,50 +826,168 @@ Partial Class DashBoard
         'lblcurrentVoters
         '
         Me.lblcurrentVoters.AutoSize = True
-        Me.lblcurrentVoters.Font = New System.Drawing.Font("Segoe UI", 30.25!, System.Drawing.FontStyle.Bold)
-        Me.lblcurrentVoters.ForeColor = System.Drawing.Color.Navy
-        Me.lblcurrentVoters.Location = New System.Drawing.Point(99, 70)
+        Me.lblcurrentVoters.Font = New System.Drawing.Font("Segoe UI", 40.25!, System.Drawing.FontStyle.Bold)
+        Me.lblcurrentVoters.ForeColor = System.Drawing.Color.Purple
+        Me.lblcurrentVoters.Location = New System.Drawing.Point(115, 24)
         Me.lblcurrentVoters.Name = "lblcurrentVoters"
-        Me.lblcurrentVoters.Size = New System.Drawing.Size(96, 55)
+        Me.lblcurrentVoters.Size = New System.Drawing.Size(123, 72)
         Me.lblcurrentVoters.TabIndex = 0
         Me.lblcurrentVoters.Text = "200"
         '
-        'Panel1
+        'Timer1
         '
-        Me.Panel1.Controls.Add(Me.Label43)
-        Me.Panel1.Controls.Add(Me.lblcurrentVoters)
-        Me.Panel1.Location = New System.Drawing.Point(993, 526)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(293, 149)
-        Me.Panel1.TabIndex = 14
+        Me.Timer1.Enabled = True
+        Me.Timer1.Interval = 1000
         '
-        'Panel6
+        'Label2
         '
-        Me.Panel6.Controls.Add(Me.Label41)
-        Me.Panel6.Controls.Add(Me.lblTotalNumberOfVoter)
-        Me.Panel6.Location = New System.Drawing.Point(612, 526)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(324, 149)
-        Me.Panel6.TabIndex = 14
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.Label2.ForeColor = System.Drawing.Color.Blue
+        Me.Label2.Location = New System.Drawing.Point(188, 12)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(165, 32)
+        Me.Label2.TabIndex = 18
+        Me.Label2.Text = "DASHBOARD"
         '
-        'lblCount
+        'Label6
         '
-        Me.lblCount.AutoSize = True
-        Me.lblCount.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.25!)
-        Me.lblCount.Location = New System.Drawing.Point(229, 19)
-        Me.lblCount.Name = "lblCount"
-        Me.lblCount.Size = New System.Drawing.Size(18, 20)
-        Me.lblCount.TabIndex = 15
-        Me.lblCount.Text = "0"
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Segoe UI Semibold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(100, 99)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(98, 17)
+        Me.Label6.TabIndex = 0
+        Me.Label6.Text = "DANAA JACOB"
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.lblOrganizerNo)
+        Me.GroupBox4.Controls.Add(Me.Label23)
+        Me.GroupBox4.Controls.Add(Me.lblOrganizerYes)
+        Me.GroupBox4.Controls.Add(Me.Label25)
+        Me.GroupBox4.ForeColor = System.Drawing.Color.Navy
+        Me.GroupBox4.Location = New System.Drawing.Point(33, 21)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(277, 58)
+        Me.GroupBox4.TabIndex = 1
+        Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "VOTES"
+        '
+        'Label25
+        '
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(6, 25)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(38, 21)
+        Me.Label25.TabIndex = 0
+        Me.Label25.Text = "YES"
+        '
+        'lblOrganizerYes
+        '
+        Me.lblOrganizerYes.AutoSize = True
+        Me.lblOrganizerYes.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.lblOrganizerYes.ForeColor = System.Drawing.Color.Lime
+        Me.lblOrganizerYes.Location = New System.Drawing.Point(71, 18)
+        Me.lblOrganizerYes.Name = "lblOrganizerYes"
+        Me.lblOrganizerYes.Size = New System.Drawing.Size(57, 32)
+        Me.lblOrganizerYes.TabIndex = 0
+        Me.lblOrganizerYes.Text = "150"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Location = New System.Drawing.Point(161, 25)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(35, 21)
+        Me.Label23.TabIndex = 0
+        Me.Label23.Text = "NO"
+        '
+        'lblOrganizerNo
+        '
+        Me.lblOrganizerNo.AutoSize = True
+        Me.lblOrganizerNo.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.lblOrganizerNo.ForeColor = System.Drawing.Color.Lime
+        Me.lblOrganizerNo.Location = New System.Drawing.Point(209, 18)
+        Me.lblOrganizerNo.Name = "lblOrganizerNo"
+        Me.lblOrganizerNo.Size = New System.Drawing.Size(43, 32)
+        Me.lblOrganizerNo.TabIndex = 0
+        Me.lblOrganizerNo.Text = "45"
+        '
+        'lblTotalNumberOfVoter
+        '
+        Me.lblTotalNumberOfVoter.AutoSize = True
+        Me.lblTotalNumberOfVoter.Font = New System.Drawing.Font("Segoe UI", 40.25!, System.Drawing.FontStyle.Bold)
+        Me.lblTotalNumberOfVoter.ForeColor = System.Drawing.Color.Teal
+        Me.lblTotalNumberOfVoter.Location = New System.Drawing.Point(106, 22)
+        Me.lblTotalNumberOfVoter.Name = "lblTotalNumberOfVoter"
+        Me.lblTotalNumberOfVoter.Size = New System.Drawing.Size(123, 72)
+        Me.lblTotalNumberOfVoter.TabIndex = 0
+        Me.lblTotalNumberOfVoter.Text = "200"
+        '
+        'Label41
+        '
+        Me.Label41.AutoSize = True
+        Me.Label41.Font = New System.Drawing.Font("Segoe UI", 16.25!, System.Drawing.FontStyle.Bold)
+        Me.Label41.ForeColor = System.Drawing.Color.DodgerBlue
+        Me.Label41.Location = New System.Drawing.Point(594, 504)
+        Me.Label41.Name = "Label41"
+        Me.Label41.Size = New System.Drawing.Size(342, 30)
+        Me.Label41.TabIndex = 0
+        Me.Label41.Text = "EXPECTED NUMBER OF VOTERS"
+        '
+        'GunaShadowPanel5
+        '
+        Me.GunaShadowPanel5.BackColor = System.Drawing.Color.Transparent
+        Me.GunaShadowPanel5.BaseColor = System.Drawing.Color.White
+        Me.GunaShadowPanel5.Controls.Add(Me.GroupBox4)
+        Me.GunaShadowPanel5.Controls.Add(Me.Label6)
+        Me.GunaShadowPanel5.Location = New System.Drawing.Point(601, 328)
+        Me.GunaShadowPanel5.Name = "GunaShadowPanel5"
+        Me.GunaShadowPanel5.Radius = 5
+        Me.GunaShadowPanel5.ShadowColor = System.Drawing.Color.Navy
+        Me.GunaShadowPanel5.ShadowDepth = 200
+        Me.GunaShadowPanel5.Size = New System.Drawing.Size(335, 138)
+        Me.GunaShadowPanel5.TabIndex = 12
+        '
+        'GunaShadowPanel8
+        '
+        Me.GunaShadowPanel8.BackColor = System.Drawing.Color.Transparent
+        Me.GunaShadowPanel8.BaseColor = System.Drawing.Color.White
+        Me.GunaShadowPanel8.Controls.Add(Me.lblTotalNumberOfVoter)
+        Me.GunaShadowPanel8.Location = New System.Drawing.Point(601, 541)
+        Me.GunaShadowPanel8.Name = "GunaShadowPanel8"
+        Me.GunaShadowPanel8.Radius = 5
+        Me.GunaShadowPanel8.ShadowColor = System.Drawing.Color.Teal
+        Me.GunaShadowPanel8.ShadowDepth = 200
+        Me.GunaShadowPanel8.Size = New System.Drawing.Size(335, 134)
+        Me.GunaShadowPanel8.TabIndex = 19
+        '
+        'GunaShadowPanel9
+        '
+        Me.GunaShadowPanel9.BackColor = System.Drawing.Color.Transparent
+        Me.GunaShadowPanel9.BaseColor = System.Drawing.Color.White
+        Me.GunaShadowPanel9.Controls.Add(Me.lblcurrentVoters)
+        Me.GunaShadowPanel9.Location = New System.Drawing.Point(975, 537)
+        Me.GunaShadowPanel9.Name = "GunaShadowPanel9"
+        Me.GunaShadowPanel9.Radius = 5
+        Me.GunaShadowPanel9.ShadowColor = System.Drawing.Color.Purple
+        Me.GunaShadowPanel9.ShadowDepth = 200
+        Me.GunaShadowPanel9.Size = New System.Drawing.Size(335, 138)
+        Me.GunaShadowPanel9.TabIndex = 20
         '
         'DashBoard
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1359, 764)
-        Me.Controls.Add(Me.lblCount)
-        Me.Controls.Add(Me.Panel6)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Label43)
+        Me.Controls.Add(Me.GunaShadowPanel9)
+        Me.Controls.Add(Me.Label41)
+        Me.Controls.Add(Me.GunaShadowPanel8)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.MinMaxButton)
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
@@ -1000,10 +1031,6 @@ Partial Class DashBoard
         Me.GunaShadowPanel4.PerformLayout()
         Me.GroupBox7.ResumeLayout(False)
         Me.GroupBox7.PerformLayout()
-        Me.GunaShadowPanel5.ResumeLayout(False)
-        Me.GunaShadowPanel5.PerformLayout()
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
         Me.GunaShadowPanel6.ResumeLayout(False)
         Me.GunaShadowPanel6.PerformLayout()
         Me.GroupBox6.ResumeLayout(False)
@@ -1012,10 +1039,14 @@ Partial Class DashBoard
         Me.GunaShadowPanel7.PerformLayout()
         Me.GroupBox5.ResumeLayout(False)
         Me.GroupBox5.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        Me.Panel6.ResumeLayout(False)
-        Me.Panel6.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
+        Me.GunaShadowPanel5.ResumeLayout(False)
+        Me.GunaShadowPanel5.PerformLayout()
+        Me.GunaShadowPanel8.ResumeLayout(False)
+        Me.GunaShadowPanel8.PerformLayout()
+        Me.GunaShadowPanel9.ResumeLayout(False)
+        Me.GunaShadowPanel9.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1033,13 +1064,11 @@ Partial Class DashBoard
     Friend WithEvents GunaShadowPanel2 As Guna.UI.WinForms.GunaShadowPanel
     Friend WithEvents GunaShadowPanel3 As Guna.UI.WinForms.GunaShadowPanel
     Friend WithEvents GunaShadowPanel4 As Guna.UI.WinForms.GunaShadowPanel
-    Friend WithEvents GunaShadowPanel5 As Guna.UI.WinForms.GunaShadowPanel
     Friend WithEvents GunaShadowPanel6 As Guna.UI.WinForms.GunaShadowPanel
     Friend WithEvents GunaShadowPanel7 As Guna.UI.WinForms.GunaShadowPanel
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label7 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label8 As Label
     Friend WithEvents GroupBox1 As GroupBox
@@ -1062,11 +1091,6 @@ Partial Class DashBoard
     Friend WithEvents lblTreas2 As Label
     Friend WithEvents lblTreas1 As Label
     Friend WithEvents Label34 As Label
-    Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents lblOrganizerNo As Label
-    Friend WithEvents Label23 As Label
-    Friend WithEvents lblOrganizerYes As Label
-    Friend WithEvents Label25 As Label
     Friend WithEvents GroupBox6 As GroupBox
     Friend WithEvents lblWomenCommNo As Label
     Friend WithEvents Label31 As Label
@@ -1086,11 +1110,19 @@ Partial Class DashBoard
     Friend WithEvents Label40 As Label
     Friend WithEvents buttonStatistics As Guna.UI.WinForms.GunaButton
     Friend WithEvents buttonDashboard As Guna.UI.WinForms.GunaButton
-    Friend WithEvents Panel6 As Panel
-    Friend WithEvents Label41 As Label
-    Friend WithEvents lblTotalNumberOfVoter As Label
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents Label43 As Label
     Friend WithEvents lblcurrentVoters As Label
-    Friend WithEvents lblCount As Label
+    Friend WithEvents Timer1 As Timer
+    Friend WithEvents Label2 As Label
+    Friend WithEvents GunaShadowPanel9 As Guna.UI.WinForms.GunaShadowPanel
+    Friend WithEvents Label41 As Label
+    Friend WithEvents GunaShadowPanel8 As Guna.UI.WinForms.GunaShadowPanel
+    Friend WithEvents lblTotalNumberOfVoter As Label
+    Friend WithEvents GunaShadowPanel5 As Guna.UI.WinForms.GunaShadowPanel
+    Friend WithEvents GroupBox4 As GroupBox
+    Friend WithEvents lblOrganizerNo As Label
+    Friend WithEvents Label23 As Label
+    Friend WithEvents lblOrganizerYes As Label
+    Friend WithEvents Label25 As Label
+    Friend WithEvents Label6 As Label
 End Class

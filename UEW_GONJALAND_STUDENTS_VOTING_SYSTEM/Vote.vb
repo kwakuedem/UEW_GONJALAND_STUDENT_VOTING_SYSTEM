@@ -31,6 +31,7 @@
                 checkOrganizerVote()
                 checkWomenCommisionerlVote()
                 checkPublicRelationOfficerVote()
+                changeVoterStatusToVoted()
 
                 iExit = MessageBox.Show("Votes have been cast successfully !", "Vote casted", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 If iExit = DialogResult.OK Then
@@ -238,4 +239,19 @@
             Me.WindowState = FormWindowState.Normal
         End If
     End Sub
+
+    'updateVotedIndexToTrue
+    Sub changeVoterStatusToVoted()
+        index = lblIndexNumber.Text
+        Try
+            data.ExecuteQuery("UPDATE `users` SET `status` = 1 WHERE `student_index` = '" & index & "';")
+            If data.HasException = True Then
+                MsgBox(data.exception)
+            End If
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
+
+    End Sub
+
 End Class
