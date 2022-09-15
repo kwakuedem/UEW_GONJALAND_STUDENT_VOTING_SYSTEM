@@ -28,8 +28,11 @@ Partial Class Login
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtIndexNuber = New System.Windows.Forms.TextBox()
+        Me.lblauthor = New System.Windows.Forms.Label()
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'PictureBox1
@@ -85,14 +88,36 @@ Partial Class Login
         Me.txtIndexNuber.Size = New System.Drawing.Size(284, 29)
         Me.txtIndexNuber.TabIndex = 1
         '
+        'lblauthor
+        '
+        Me.lblauthor.AutoSize = True
+        Me.lblauthor.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblauthor.Location = New System.Drawing.Point(132, 2)
+        Me.lblauthor.Name = "lblauthor"
+        Me.lblauthor.Size = New System.Drawing.Size(39, 13)
+        Me.lblauthor.TabIndex = 26
+        Me.lblauthor.Text = "Label2"
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption
+        Me.Panel1.Controls.Add(Me.lblauthor)
+        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.Panel1.Location = New System.Drawing.Point(0, 447)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(460, 18)
+        Me.Panel1.TabIndex = 27
+        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(460, 443)
+        Me.ClientSize = New System.Drawing.Size(460, 465)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.buttonLogin)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Login"
@@ -101,6 +126,8 @@ Partial Class Login
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -110,4 +137,6 @@ Partial Class Login
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents Label1 As Label
     Friend WithEvents txtIndexNuber As TextBox
+    Friend WithEvents lblauthor As Label
+    Friend WithEvents Panel1 As Panel
 End Class

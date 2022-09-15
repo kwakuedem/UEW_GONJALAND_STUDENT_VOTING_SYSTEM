@@ -88,10 +88,10 @@ Partial Class DashBoard
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.lblOrganizerYes = New System.Windows.Forms.Label()
-        Me.Label23 = New System.Windows.Forms.Label()
         Me.lblOrganizerNo = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.lblOrganizerYes = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
         Me.lblTotalNumberOfVoter = New System.Windows.Forms.Label()
         Me.Label41 = New System.Windows.Forms.Label()
         Me.GunaShadowPanel5 = New Guna.UI.WinForms.GunaShadowPanel()
@@ -874,15 +874,26 @@ Partial Class DashBoard
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "VOTES"
         '
-        'Label25
+        'lblOrganizerNo
         '
-        Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(6, 25)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(38, 21)
-        Me.Label25.TabIndex = 0
-        Me.Label25.Text = "YES"
+        Me.lblOrganizerNo.AutoSize = True
+        Me.lblOrganizerNo.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.lblOrganizerNo.ForeColor = System.Drawing.Color.Lime
+        Me.lblOrganizerNo.Location = New System.Drawing.Point(209, 18)
+        Me.lblOrganizerNo.Name = "lblOrganizerNo"
+        Me.lblOrganizerNo.Size = New System.Drawing.Size(43, 32)
+        Me.lblOrganizerNo.TabIndex = 0
+        Me.lblOrganizerNo.Text = "45"
+        '
+        'Label23
+        '
+        Me.Label23.AutoSize = True
+        Me.Label23.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Location = New System.Drawing.Point(161, 25)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(35, 21)
+        Me.Label23.TabIndex = 0
+        Me.Label23.Text = "NO"
         '
         'lblOrganizerYes
         '
@@ -895,26 +906,15 @@ Partial Class DashBoard
         Me.lblOrganizerYes.TabIndex = 0
         Me.lblOrganizerYes.Text = "150"
         '
-        'Label23
+        'Label25
         '
-        Me.Label23.AutoSize = True
-        Me.Label23.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(161, 25)
-        Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(35, 21)
-        Me.Label23.TabIndex = 0
-        Me.Label23.Text = "NO"
-        '
-        'lblOrganizerNo
-        '
-        Me.lblOrganizerNo.AutoSize = True
-        Me.lblOrganizerNo.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Bold)
-        Me.lblOrganizerNo.ForeColor = System.Drawing.Color.Lime
-        Me.lblOrganizerNo.Location = New System.Drawing.Point(209, 18)
-        Me.lblOrganizerNo.Name = "lblOrganizerNo"
-        Me.lblOrganizerNo.Size = New System.Drawing.Size(43, 32)
-        Me.lblOrganizerNo.TabIndex = 0
-        Me.lblOrganizerNo.Text = "45"
+        Me.Label25.AutoSize = True
+        Me.Label25.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label25.Location = New System.Drawing.Point(6, 25)
+        Me.Label25.Name = "Label25"
+        Me.Label25.Size = New System.Drawing.Size(38, 21)
+        Me.Label25.TabIndex = 0
+        Me.Label25.Text = "YES"
         '
         'lblTotalNumberOfVoter
         '
@@ -1010,6 +1010,7 @@ Partial Class DashBoard
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel4)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "DashBoard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "DashBoard"

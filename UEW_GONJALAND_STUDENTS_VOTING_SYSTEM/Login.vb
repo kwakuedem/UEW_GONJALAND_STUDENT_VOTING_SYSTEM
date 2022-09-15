@@ -40,4 +40,8 @@
             MsgBox(ex.ToString)
         End Try
     End Sub
+
+    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lblauthor.Text = "Copyright © 2022, Edem Kwaku"
+    End Sub
 End Class

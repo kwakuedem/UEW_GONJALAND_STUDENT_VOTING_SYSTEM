@@ -1097,6 +1097,7 @@ Partial Class Vote
         Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Vote"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "GONJALAND ASSOCIATION VOTING SYSTEM"
